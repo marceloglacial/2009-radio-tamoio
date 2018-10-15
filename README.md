@@ -21,11 +21,11 @@ https://glacial.gitlab.io/2009-radio-tamoio/
 
 ![screenshot](design/01-home.jpg)
 
---
+---
 
 ![screenshot](design/02-page.jpg)
 
---
+---
 
 ![screenshot](design/03-single.jpg)
 
