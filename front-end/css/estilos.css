@@ -1,0 +1,658 @@
+
+/* Reset 
+ * ----------------------------------------------------------------- */
+ 
+* {
+	margin:0;
+	padding:0;
+}
+hr {
+	display:none;
+}
+#Atalhos {
+	display:none;
+}
+body {
+	background:url(../img/fundo_body.jpg) top center no-repeat;
+}
+html {
+	background:url(../img/rodape_fundo.jpg) bottom center no-repeat;
+}
+/* Site
+ * ----------------------------------------------------------------- */
+#Site {
+	width:950px;
+	margin:0 auto;
+	position:relative;
+
+}
+
+/* Cabecalho
+ * ----------------------------------------------------------------- */
+#Cabecalho {
+	position:absolute;
+}
+#Cabecalho h1 a {
+	display:block;
+	width:215px;
+	height:230px;
+	text-indent:-9999px;
+	background:url(../img/aovivo_fundo.jpg) no-repeat -9999px; /* por incrivel que pareça, so pegou layout no IE7 com um background */
+}
+
+
+/* Ao Vivo
+ * ----------------------------------------------------------------- */
+#AoVivo {
+	position:absolute;
+	top:250px;
+}
+#AoVivo h2 {
+	display:none;
+}
+#AoVivo a {
+	display:block;
+	text-indent:-9999px;
+	width:202px;
+	height:30px;
+	background:url(../img/aovivo_fundo.jpg) no-repeat;
+}
+
+/* Menu 
+ * ----------------------------------------------------------------- */
+#Menu {
+	position:absolute;
+	top:10px;
+	right:0px;
+}
+#Menu h2 {
+	display:none;
+}
+#Menu ul {
+	list-style:none;
+	padding-right:165px;
+}
+#Menu ul li {
+	float:left;
+	padding-left:5px;
+}
+#Menu ul li a {
+	display:block;
+	padding:2px 3px;
+	
+	font-family: "Trebuchet MS", Arial, Verdana;
+	font-size: 14px;
+	color:#666;
+	text-transform:lowercase;
+	text-decoration:none;
+}
+#Menu ul li.ativo a,
+#Menu ul li a:hover {
+	text-decoration:underline;
+}
+
+/* Busca
+ * ----------------------------------------------------------------- */
+#Busca {
+	position:absolute;
+	top:9px;
+	*top:8px;
+	right:20px;
+}
+#Busca form fieldset {
+	border:none;
+}
+#Busca form legend {
+	display:none;
+}
+#Busca form input {
+	width:95px;
+	border:solid 0px #FFF;
+	
+	font-family: Arial, Verdana;
+	font-size:11px;
+	color:#999;
+}
+#Busca form button {
+	border:none;
+	background:none;
+	cursor:hand;
+	
+	width:20px;
+	height:20px;
+	text-indent:-9999px;
+}
+
+/* Conteudo
+ * ----------------------------------------------------------------- */
+#Conteudo {
+	padding:200px 0 20px 220px;
+	background:url(../img/conteudo_titulo.jpg) no-repeat 220px 200px;
+}
+body.home #Conteudo {
+	padding:50px 0 20px 220px;
+	background:none;
+}
+#Chamada h2 a {
+	display:block;
+	font-family:Impact, Verdana, Arial;
+	font-size:25px;
+	font-weight:normal;
+	color:#666;
+	padding:8px 0 40px 20px;
+	text-decoration:none;
+}
+#Noticia h3 {
+	font-family: "Times New Roman", Times;
+	font-size:250%;
+	font-weight:normal;
+	color:#000;
+	
+	padding-bottom:30px;
+}
+#Noticia p {
+	font-family: Verdana, Arial;
+	font-size:80%;
+	color:#484848;
+	
+	line-height:1.7em;
+	padding-bottom:1.7em;
+}
+#Noticia .chamada,
+#Noticia .autor {
+	display:none;
+}
+#Ferramentas h4 {
+	display:none;
+}
+#Ferramentas ul {
+	list-style:none;
+	padding-bottom:30px;	
+}
+#Ferramentas ul li {
+	display:inline;
+}
+#Ferramentas ul li a {
+	display:block;
+	width:16px;
+	height:16px;
+	text-indent:-9999px;
+	float:left;
+	margin-right:15px;
+	
+	background:url(../img/ferramentas.jpg) no-repeat left top;
+}
+#Ferramentas ul li.enviar a {
+	background-position: -26px top;
+}
+#Ferramentas ul li.aumentar a {
+	background-position: -51px top;
+}
+#Ferramentas ul li.diminuir a {
+	background-position: -77px top;
+}
+
+#Noticia .foto {
+	width:250px;
+	background:#0095D9;
+	
+	font-family: Verdana, Arial;
+	font-size:80%;
+	color:#FFF;	
+	
+	float:right;
+	margin:0 0 10px 20px;
+}
+#Noticia .foto img {
+	width:250px;
+	border:none;
+	border-bottom: solid 2px #FFF;
+}
+#Noticia .legenda {
+	padding:5px 10px 8px 10px;
+	display:block;
+}
+
+#Compartilhar {
+	clear:both;
+	padding-bottom:50px;
+}
+#Compartilhar h4 {
+	font-family: "Times New Roman", Times, Georgia;
+	font-size:130%;
+	font-weight:normal;
+	color:#999;
+}
+#Compartilhar ul {
+	list-style:none;
+	padding:15px 0;	
+}
+#Compartilhar ul li {
+	display:inline;
+}
+#Compartilhar ul li a {
+	display:block;
+	width:17px;
+	height:17px;
+	text-indent:-9999px;
+	float:left;
+	margin-right:15px;
+	
+	background:url(../img/compartilhe.jpg) no-repeat left top;
+}
+#Compartilhar ul li.digg a {
+	background-position: -26px top;
+}
+#Compartilhar ul li.google a {
+	background-position: -53px top;
+}
+#Compartilhar ul li.facebook a {
+	background-position: -77px top;
+}
+#Compartilhar ul li.myspace a {
+	background-position: -103px top;
+}
+#Compartilhar ul li.twitter a {
+	background-position: -130px top;
+}
+
+/* Mural
+ * ----------------------------------------------------------------- */
+#Mensagens h2 {
+ 	font-family: Impact, Verdana, Arial;
+	font-size:150%;
+	font-weight:normal;
+	color:#0095D9;
+	
+	width:100%;
+	
+	padding-bottom:10px;
+	margin-bottom:20px;
+	border-bottom: solid 2px #F59414;
+ }
+ #Mensagens ul {
+	list-style:none;
+	
+	font-family: Verdana, Arial;
+	font-size:80%;
+	color:#666;
+	
+	line-height:1.7em;
+	padding-bottom:1.7em;
+}
+#Mensagens ul li {
+	padding:0 0 10px 170px;
+	border-bottom:solid 1px #F0F0F0;
+	margin-bottom:10px;
+	
+	position:relative;
+}
+#Mensagens .separador {
+	display:none;
+}
+#Mensagens a {
+	color:#0095D9;
+	text-decoration:none;
+	position:absolute;
+	left:0;
+	display:block;
+	width:120px;
+	text-align:right;
+}
+/* Formularios
+ * ----------------------------------------------------------------- */
+#Comente {
+	clear:both;
+ }
+
+ #Conteudo form fieldset {
+	border:none;
+ }
+ 
+#Conteudo form legend {
+ 	font-family: Impact, Verdana, Arial;
+	font-size:150%;
+	font-weight:normal;
+	color:#0095D9;
+	
+	width:100%;
+	
+	padding-bottom:10px;
+	margin-bottom:20px;
+	border-bottom: solid 2px #F59414;
+ }
+ #Conteudo form label {
+	display:block;
+	width:210px;
+	padding-right:20px;
+	float:left;
+	text-align:right;
+	
+	font-family: Impact, Verdana, Arial;
+	font-size:150%;
+	font-weight:normal;
+	color:#666;
+} 
+#Conteudo form textarea,
+#Conteudo form input {
+	border:solid 1px #FECA0A;
+	padding:7px 7px;
+	width:480px;
+}
+#Conteudo form button {
+	border:none;
+	background:#FECA0A;
+
+	font-family: Impact, Verdana, Arial;
+	font-size:100%;
+	font-weight:normal;
+	color:#666;
+	
+	padding:5px;
+	position:relative;
+	left:230px;
+	width:100px;
+
+	cursor:hand;	
+}
+
+/* Destaques
+ * ----------------------------------------------------------------- */
+ #Destaques a {
+	text-decoration:none;
+}
+#Destaques a:hover {
+	text-decoration:underline;
+}
+ 
+#Destaques h2 {
+	display:none;
+}
+#Destaques .grande {
+	width:730px;
+	height:165px;
+	overflow:hidden;
+	position:relative;
+	padding:15px 0 130px 0;
+
+	font-family: "Times New Roman", Times;
+}
+#Destaques .grande .titulo {
+	width:375px;
+	font-size:35px;
+	font-weight:normal;
+	letter-spacing:-1px;
+	text-align:right;
+}
+#Destaques .grande .titulo a {
+	color:#000;
+}
+#Destaques .grande .chamada {
+	width:340px;
+	padding-left:35px;
+	font-size:20px;
+	font-weight:normal;
+	text-align:right;
+}
+#Destaques .grande .chamada a {
+	color:#FFF;
+}
+
+#Destaques .grande img {
+	width:310px;
+	height:140px;
+	
+	position:absolute;
+	top:17px;
+	right:0px;
+	
+	border:solid 3px #FFF;
+}
+
+#Destaques .medio {
+	width:365px;
+	height:100px;
+	margin-bottom:45px;
+	float:left;
+
+	overflow:hidden;
+	position:relative;
+	
+	font-family: "Trebuchet MS", Arial, Verdana;
+}
+#Destaques .medio  h3, 
+#Destaques .medio  p {
+	padding:0 10px 0 150px;
+}
+
+#Destaques .medio  h3 a{
+	color:#0095D9;
+	font-size:20px;
+	font-weight:normal;
+	letter-spacing:-1px;
+}
+#Destaques .medio  p a{
+	color:#666;
+	font-size:13px;
+}
+
+#Destaques .medio  img{
+	width:135px;
+	height:100px;
+	position:absolute;
+	top:0;
+	left:0;
+	
+	border:0;
+}
+
+/* Ultimas
+ * ----------------------------------------------------------------- */
+
+#Ultimas {
+	padding:30px 0; 
+}
+#Ultimas h2 {
+	font-family: Impact, Verdana, Arial;
+	font-size:150%;
+	font-weight:normal;
+	color:#666;
+	
+	padding-bottom:10px;
+	border-bottom:solid 2px #F69E29;
+}
+#Ultimas ul {
+	list-style:none;
+}
+#Ultimas ul li {
+	position:relative;
+}
+#Ultimas .separador {
+	display:none;
+}
+#Ultimas strong {
+	position:absolute;
+	left:0px;
+}
+#Ultimas ul li a {
+	display:block;
+	padding:7px 0 7px 70px;
+	
+	font-family:Arial, Verdana;
+	font-size:12px;
+	text-decoration:none;
+	color:#666;
+	
+	border-bottom:solid 1px #CCC;
+}
+#Ultimas ul li a:hover{
+	background:#F1F1F1;
+}
+/* Programacao
+ * ----------------------------------------------------------------- */
+
+#Programacao {
+	position:absolute;
+	top:300px;
+	left:0px;
+	width:200px;
+}
+#Programacao h2 {
+	background:url(../img/programacao_titulo.jpg) no-repeat left top;
+	height:21px;
+	text-indent:-9999px;
+	
+	padding-bottom:10px;
+	border-bottom:solid 2px #F69E29;
+}
+#Programacao ul {
+	list-style:none;
+}
+#Programacao ul li {
+	position:relative;
+	float:left;
+}
+#Programacao .separador {
+	display:none;
+}
+#Programacao strong {
+	position:absolute;
+	left:0px;
+}
+#Programacao ul li a {
+	display:block;
+	width:160px;
+	float:left;
+	padding:7px 0 7px 40px;
+	
+	font-family:Arial, Verdana;
+	font-size:12px;
+	text-decoration:none;
+	color:#666;
+	
+	border-bottom:solid 1px #CCC;
+}
+#Programacao ul li a:hover{
+	background:#F1F1F1;
+}
+
+#Dias ul {
+	border-bottom: solid 2px #F59414;
+	list-style:none;
+	height:40px;
+	padding-top:10px;
+}
+#Dias ul li {
+	float:left;
+}
+#Dias ul li a {
+	display:block;
+	width:104px;
+	height:30px;
+	padding-top:10px;
+	
+	font-family: "Trebuchet MS", Arial, Verdana;
+	font-size:80%;
+	text-align:center;
+	text-decoration:none;
+	text-transform:lowercase;
+	color:#666;
+}
+#Dias ul li a:hover,
+#Dias ul li.ativo a {
+	background:#F0F0F0;
+}
+#Ultimas.programacao {
+	padding-top:0;
+}
+#Ultimas.programacao ul li a {
+	padding-left:50px;
+}
+
+/* Publicidade
+ * ----------------------------------------------------------------- */
+
+#Publicidade {
+	position:absolute;
+	top:0;
+	left:0;
+}
+#Publicidade h2,
+#Publicidade #Sky {
+	display:none;
+}
+#Publicidade #Superbanner {
+	position:absolute;
+	top:75px;
+	left:220px;
+}
+body.home #Publicidade #Superbanner {
+	top:250px;
+}
+
+
+/* Rodape
+ * ----------------------------------------------------------------- */
+#Rodape {
+	clear:both;
+	height:116px;
+	
+	position:relative;
+}
+#Rodape h2 {
+	display:none;
+}
+#Rodape ul {
+	position:absolute;
+	top:20px;
+	right:132px;
+	
+	list-style:none;
+}
+#Rodape ul li {
+	float:left;
+}
+#Rodape ul li a {
+	display:block;
+	height:20px;
+	text-indent:-9999px;
+	margin-left:12px;
+}
+#Rodape ul li a:hover {
+	border-bottom:solid 3px #FFF;
+}
+#Rodape ul li.faleconosco a {
+	width:84px;
+}
+#Rodape ul li.anuncie a {
+	width:55px;
+}
+#Rodape ul li.expediente a {
+	width:78px;
+}
+#Rodape ul li.facebook a {
+	width:63px;
+}
+#Rodape ul li.orkut a {
+	width:40px;
+}
+#Rodape ul li.twitter a {
+	width:48px;
+}
+#Rodape #hcard-pvm {
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+#Rodape #hcard-pvm .org {
+	display:none;
+}
+#Rodape #hcard-pvm a {
+	display:block;
+	width:100px;
+	height:50px;
+	text-indent:-9999px;
+}
+#Rodape #hcard-Radio-Tamoio {
+	display:none;
+}
